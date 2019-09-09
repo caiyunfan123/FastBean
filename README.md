@@ -4,11 +4,19 @@ case class Bean(
 var a:Int = 0
 var b:String = null
 var c:Double = 0
+<<<<<<< HEAD
 ) 
 
 main{
 val str = "123,abc,2.2"
 val bean =FastBean.build(Bean())(str.split(","))
+=======
+) extends(或with) FastBean
+
+main{
+val str = "123,abc,2.2"
+val bean = Bean().build(str.split(","))
+>>>>>>> remotes/origin/master
 }
 
 备注：
